@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="assets/asian-food.png" />
+    
+    <!-- ✅ AOS CSS (must come before your own CSS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Asian Delight</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Asian Delight</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#food">Food</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          <li>
+            <img src="assets/search.svg" alt="search" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img 
+          src="assets/ramen-bowl-1.png"
+          alt="ramen"
+          data-aos="fade-up"
+        />
+        <h2 data-aos="fade-up">
+          亞 <br />
+          洲 <br />
+          食
+        </h2>
+
+        <div class="hero-image__overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Experience authentic Asian flavors</h1>
+          <p>Savor the taste of the most delicious Asian cuisine from anywhere and anytime.</p>
+
+          <div class="hero-content__buttons">
+            <button class="hero-content__order-button">Order Now</button>
+            <button class="hero-content__play-button">
+              <img src="assets/play-circle.svg" alt="play" />
+              How to Order
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>76<span>k+</span></h4>
+            <p>Satisfied Customers</p>
+          </div>
+
+          <div class="hero-content__review">
+            <img src="assets/user.png" alt="user" />
+            <p>"This is the best Asian resturant that ever existed."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="about-us__image">
+        <div class="about-us__image-sushi3">
+          <img src="assets/dim-sum.png" alt="dim sum" data-aos="fade-right" />
+        </div>
+
+        <button class="about-us__button">
+          Learn More
+
+          <img src="assets/arrow-up-right.svg" alt="learn more" />
+        </button>
+
+        <div class="about-us__image-sushi2">
+          <img src="assets/pad-thai.png" alt="pad thai"  data-aos="fade-right" />
+        </div>
+      </div>
+
+      <div class="about-us__content"  data-aos="fade-left">
+        <h4 class="subtitle">About Us</h4>
+        <h3 class="title">Our mission is to bring authentic Asian flavors to you.</h3>
+        <p class="description">We will continue to provide the experience of true Asian hospitality, with carefully crafted dishes from across Asia for our customers.
+        </p>
+      </div>
+    </section>
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">Popular Dishes</h2>
+
+      <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
+        <button class="popular-foods__filter-btn active">All</button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/ramen-icon.png" alt="ramen" />
+          Ramen
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/dumpling-icon.png" alt="dumplings" />
+          Dumplings
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/noodle-icon.png" alt="noodles" />
+          Noodles
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/rice-icon.png" alt="rice" />
+          Rice Bowls
+        </button>
+        <button class="popular-foods__filter-btn">All</button>
+      </div>
+
+      <div class="popular-foods__catalogue" data-aos="fade-up">
+        <article class="popular-foods__card">
+          <img class="popular-foods__card-image" src="assets/tonkotsu-ramen.png" alt="tonkotsu ramen" />
+          <h4 class="popular-foods__card-title">Tonkotsu Ramen</h4>
+
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>4.9</p>
+            </div>
+
+            <p class="popular-foods__card-price">$18.00</p>
+          </div>
+        </article>
+
+        <article class="popular-foods__card active-card">
+          <img class="popular-foods__card-image" src="assets/gyoza.png" alt="gyoza" />
+          <h4 class="popular-foods__card-title">Pan-Fried Gyoza</h4>
+          
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>5.0</p>
+            </div>
+            
+            <p class="popular-foods__card-price">$14.00</p>
+          </div>
+        </article>
+
+        <article class="popular-foods__card">
+          <img class="popular-foods__card-image" src="assets/fried-rice.png" alt="fried rice" />
+          <h4 class="popular-foods__card-title">Special Fried Rice</h4>
+
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>4.7</p>
+            </div>
+
+            <p class="popular-foods__card-price">$13.00</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="popular-foods__button">
+        Explore Menu
+        <img src="assets/arrow-right.svg"  alt="arrow-right" />
+      </button>
+    </section>
+
+    <section class="trending" id="food">
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="subtitle">What's Trending / 熱門趨勢</p>
+  
+          <h3 class="title">Japanese Ramen
+          </h3>
+          <p class="description">Experience the rich, savory flavors of authentic Japanese ramen.
+          </p>
+  
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Tonkotsu Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Miso Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Shoyu Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Spicy Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Vegetable Ramen</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Seafood Ramen</p>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="trending__image flex-center">
+          <img src="assets/ramen-featured.png" alt="ramen" data-aos="fade-left" />
+  
+          <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+        </div>
+
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Discover</p>
+      </div>
+
+      <section class="trending-drinks">
+        <div class="trending__image flex-center">
+          <img src="assets/boba-tea.png" alt="boba tea" data-aos="fade-right" />
+  
+          <div class="trending__arrow trending__arrow-top">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-right">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="subtitle">What's Trending / 熱門趨勢</p>
+  
+          <h3 class="title">Asian Beverages
+          </h3>
+          <p class="description">Refresh yourself with the finest selection of Asian drinks.
+          </p>
+  
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Bubble Tea</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Green Tea</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Thai Tea</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Matcha Latte</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Iced Coffee</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Jasmine Tea</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="subscription flex-center" id="services">
+      <h2 data-aos="flip-down">
+        Get offers straight <br />
+        to your inbox
+      </h2>
+      <p data-aos="fade-up">Sign up for the Asian Delight newsletter</p>
+
+      <div class="subscription__form" data-aos="fade-up">
+        <input type="text" placeholder="Enter your email address"/>
+        <button>Get Started</button>
+      </div>
+    </section>
+
+    <footer class="footer flex-between">
+      <h3 class="footer__logo">
+        <span>Asian</span> Delight
+      </h3>
+
+      <ul class="footer__nav">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="flex-center">
+          <img src="assets/facebook.svg" alt="facebook" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/instagram.svg" alt="instagram" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/twitter.svg" alt="twitter" />
+        </li>
+      </ul>
+    </footer>
+
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS after the page fully loads
+      document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({
+          duration: 1000, // Animation lasts 1 second
+          once: false,     // Run animation only once
+          offset: 120,    // Trigger point before element enters view
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
