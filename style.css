@@ -1160,4 +1160,115 @@ a {
   .trending__content {
     padding: 32px;
   }
+
+}
+
+/* ==================== FINAL MOBILE OPTIMIZATION ==================== */
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+
+  body {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  /* HERO section adjustments */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .hero-content-info h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-content-info p {
+    margin: 16px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-content__buttons {
+    justify-content: center;
+    margin: 20px 0;
+    gap: 16px;
+  }
+
+  .hero-content__order-button {
+    min-width: 160px;
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* POPULAR FOOD CARDS */
+  .popular-foods__catalogue {
+    gap: 24px;
+  }
+
+  .popular-foods__card,
+  .popular-foods__card.active-card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .popular-foods__card-title {
+    font-size: 20px;
+  }
+
+  .popular-foods__card-rating p,
+  .popular-foods__card-price {
+    font-size: 16px;
+  }
+
+  /* SUBSCRIPTION */
+  .subscription h2 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .subscription p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
 }
